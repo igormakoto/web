@@ -93,13 +93,17 @@ span{
     font-weight: 700;
 }
 
-.home-img {
-    border-radius: 50%;
+
+.cards {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-.home-img img{
-    postition: relative;
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid #C88A58;
+.card {
+  width: 30rem;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #C88A58;
+  box-shadow: 0 4px 10px #0002;
 }
