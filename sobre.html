@@ -1,42 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Café</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <a href="#" class="logo">Café</a>
+<body class="text-white min-vh-100" style="background-color: #121212;">
 
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="sobre.html" >Sobre</a>
-            <a href="contato.html" >Contato</a>
-        </nav>
-    </header>
-    <section class="home">
+    <nav class="navbar navbar-expand-md fixed-top px-5 w-100" style="background-color: #121212; top: 0; z-index: 100;">
+        <div class="container-fluid px-0">
+            
         
-        <div class="home-content">
-        <div class="cards">
-  <div class="card">
-    <h2>História do Café</h2>
-    <p>O café surgiu na África e, ao longo dos séculos, se espalhou pelo mundo, tornando-se uma das bebidas mais populares.</p>
-  </div>
+            <a href="#" class="navbar-brand fs-1 fw-bold" style="color: #C88A58; transition: 0.5s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">Café</a>
 
-  <div class="card">
-    <h2>Tipos de Café</h2>
-    <p>Existem diversos tipos de café, como espresso, cappuccino, latte e café coado, cada um com sabores e preparos únicos.</p>
-  </div>
+          
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
 
-  <div class="card">
-    <h2>O Café no Brasil</h2>
-    <p>O Brasil é um dos maiores produtores de café do mundo, conhecido pela qualidade e diversidade de seus grãos.</p>
-  </div>
-</div>
+      
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #121212 !important;">
+                
+               
+                <div class="offcanvas-header border-bottom border-secondary">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #C88A58;">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+                </div>
+
+               
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 align-items-start align-items-md-center">
+                        <li class="nav-item ms-md-4 mb-3 mb-md-0">
+                            <a href="index.html" class="nav-link fs-5 fw-medium pb-1 active" style="color: #C88A58 !important; border-bottom: 3px solid #C88A58;">Home</a>
+                        </li>
+                        <li class="nav-item ms-md-4 mb-3 mb-md-0">
+                            <a href="sobre.html" class="nav-link fs-5 fw-medium text-white pb-1 border-bottom border-3 border-transparent" onmouseover="this.style.color='#C88A58'; this.style.borderColor='#C88A58'" onmouseout="this.style.color='white'; this.style.borderColor='transparent'">Sobre</a>
+                        </li>
+                        <li class="nav-item ms-md-4 mb-3 mb-md-0">
+                            <a href="contato.html" class="nav-link fs-5 fw-medium text-white pb-1 border-bottom border-3 border-transparent" onmouseover="this.style.color='#C88A58'; this.style.borderColor='#C88A58'" onmouseout="this.style.color='white'; this.style.borderColor='transparent'">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="container-fluid px-5" style="padding-top: 100px; padding-bottom: 40px;">
+        <div class="row g-4 w-100 m-0">
+            
+          
+            <div class="col-12 col-md-4">
+                <div class="p-4 rounded-3 w-100 shadow d-flex flex-column justify-content-center" style="background-color: #C88A58; min-height: 70vh;">
+                    <h2 class="fs-2 fw-bold mb-3 text-white">História do Café</h2>
+                    <p class="fs-5 text-white m-0">O café surgiu na África e, ao longo dos séculos, se espalhou pelo mundo, tornando-se uma das bebidas mais populares.</p>
+                </div>
+            </div>
+
+            
+            <div class="col-12 col-md-4">
+                <div class="p-4 rounded-3 w-100 shadow d-flex flex-column justify-content-center" style="background-color: #C88A58; min-height: 70vh;">
+                    <h2 class="fs-2 fw-bold mb-3 text-white">Tipos de Café</h2>
+                    <p class="fs-5 text-white m-0">Existem diversos tipos de café, como espresso, cappuccino, latte e café coado, cada um com sabores e preparos únicos.</p>
+                </div>
+            </div>
+
+           
+            <div class="col-12 col-md-4">
+                <div class="p-4 rounded-3 w-100 shadow d-flex flex-column justify-content-center" style="background-color: #C88A58; min-height: 70vh;">
+                    <h2 class="fs-2 fw-bold mb-3 text-white">O Café no Brasil</h2>
+                    <p class="fs-5 text-white m-0">O Brasil é um dos maiores produtores de café do mundo, conhecido pela qualidade e diversidade de seus grãos.</p>
+                </div>
+            </div>
 
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </body>
 </html>
